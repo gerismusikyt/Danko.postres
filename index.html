@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postres Danko</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      color: #000000; /* texto negro */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6; /* más aire entre líneas */
+    }
+
+    header {
+      background-color: #fd5d43; /* primario */
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem; /* más espacio */
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+    }
+
+    /* Layout principal con 3 columnas */
+    .main-layout {
+      display: flex;
+      flex: 1;
+      gap: 2rem; /* espacio entre columnas */
+      padding: 2rem 1rem;
+    }
+
+    .sidebar {
+      width: 12%; /* decorativo */
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      flex: 1;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #fd5d43;
+      margin-bottom: 1rem;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem; /* más espacio entre tarjetas */
+      justify-content: center;
+      margin-bottom: 3rem; /* separación con contacto */
+    }
+
+    .producto {
+      background: #aae0a7;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .contacto {
+      background-color: #aae0a7;
+      text-align: center;
+      padding: 3rem 2rem; /* más aire */
+      border-top: 2px solid #fd5d43;
+      margin-top: 2rem;
+    }
+
+    .contacto p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: #fd5d43;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .main-layout {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍬 Postres Danko</h1>
+    <p>La vida sabe mejor con un toque dulce</p>
+  </header>
+
+  <div class="main-layout">
+    <!-- Izquierda decorativa -->
+    <aside class="sidebar">
+      <img src="img/banner1.jpg" alt="Banner gomitas">
+    </aside>
+
+    <!-- Contenido central -->
+    <main class="content">
+      <h2>Nuestros productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="img/gomitas.jpg" alt="Gomitas artesanales">
+          <h3>Gomitas artesanales</h3>
+          <p>Sabores: fresa, mango, limón, uva y surtidas</p>
+        </div>
+        <div class="producto">
+          <img src="img/carlota.jpg" alt="Carlota casera">
+          <h3>Carlotas caseras</h3>
+          <p>Limón, frutos rojos, café, chocolate y especiales de temporada</p>
+        </div>
+      </div>
+
+      <section class="contacto">
+        <h2>📞 Contacto y pedidos</h2>
+        <p>Haz tu pedido al número:</p>
+        <p><strong>+52 473 200 9309</strong></p>
+      </section>
+    </main>
+
+    <!-- Derecha decorativa -->
+    <aside class="sidebar">
+      <img src="img/banner2.jpg" alt="Banner carlotas">
+    </aside>
+  </div>
+
+  <footer>
+    <p>Postres Danko © 2026 - Dulces experiencias para compartir</p>
+  </footer>
+</body>
+</html>
